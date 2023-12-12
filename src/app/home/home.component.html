@@ -1,1 +1,17 @@
 <p>home works!</p>
+
+<div>
+  <h4>Products List</h4>
+</div>
+
+<ul *ngFor="let product of product">
+  <li>
+    <h3>
+      <p>
+        {{ product.id }}, Name: {{ product.name }}, Price:
+        {{ product.price }} Description: {{ product.description }}
+      </p>
+    </h3>
+    <button type="button" (click)="detail(product.id)">Detail</button>
+  </li>
+</ul>

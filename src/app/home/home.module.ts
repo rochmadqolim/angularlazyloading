@@ -4,14 +4,11 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 
-
 @NgModule({
-  declarations: [
-    HomeComponent
-  ],
+  declarations: [HomeComponent],
   imports: [
-    CommonModule,
-    HomeRoutingModule
-  ]
+    CommonModule, // digunakan untuk command ng
+    HomeRoutingModule,
+  ],
 })
-export class HomeModule { }
+export class HomeModule {}
