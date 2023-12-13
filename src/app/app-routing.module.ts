@@ -11,7 +11,23 @@ const routes: Routes = [
     loadChildren: () =>
       import('./product/product.module').then((m) => m.ProductModule),
   },
-  { path: 'checkout', loadChildren: () => import('./checkout/checkout.module').then(m => m.CheckoutModule) },
+  {
+    path: 'checkout',
+    loadChildren: () =>
+      import('./checkout/checkout.module').then((m) => m.CheckoutModule),
+  },
+  {
+    path: 'listProduct',
+    loadChildren: () =>
+      import('./products/list-product/list-product.module').then(
+        (m) => m.ListProductModule
+      ),
+  },
+  {
+    path: 'create',
+    loadChildren: () =>
+      import('./products/create/create.module').then((m) => m.CreateModule),
+  },
 ];
 
 @NgModule({

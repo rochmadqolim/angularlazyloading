@@ -1,0 +1,7 @@
+<p>list-product works!</p>
+
+<ul *ngFor="let product of product">
+  <li>Nama: {{ product.name }} Deskripsi: {{ product.description }}</li>
+</ul>
+
+<button type="button" (click)="addProduct()">Add</button>
